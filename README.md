@@ -73,7 +73,3 @@ The goal is to support local businesses and make discovery simple for users.
 
 Local Hunt is a MERN + Firebase location-based web application that helps users discover nearby vendors and small businesses. It provides secure authentication, vendor listing, real-time messaging, reviews, personalized recommendations, and shop navigation using Leaflet Maps. Vendors can manage their profiles and services, while users enjoy a fast, responsive, and personalized browsing experience. The platform aims to support local businesses and connect them with nearby customers.
 
----
-
-## 📸 Mockup Screens  
-*(Add your actual screenshots here)*  
