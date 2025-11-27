@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.custom-shop-icon {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+input[type="range"] {
+  width: 180px;
+  cursor: pointer;
+}

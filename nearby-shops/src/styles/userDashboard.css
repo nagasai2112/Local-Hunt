@@ -1,0 +1,96 @@
+.dashboard-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.map-section {
+  position: relative;
+  height: 100%;
+}
+
+.list-section {
+  background: #f9f9fc;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.list-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.controls input,
+.controls select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.shop-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.shop-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shop-card:hover {
+  transform: translateY(-4px);
+}
+
+.info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Sliding Details Panel */
+.details-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: white;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+  z-index: 1500;
+  overflow-y: auto;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .dashboard-container {
+    grid-template-columns: 100%;
+  }
+  .details-panel {
+    width: 100%;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,45 @@
+/* src/styles/responsive.css */
+:root {
+  --bg: #f8f9fb;
+  --card: #ffffff;
+  --brand: #4b6cb7;
+  --brandDark: #182848;
+}
+
+.userdash-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+.userdash-map {
+  position: relative;
+}
+.userdash-list {
+  background: var(--bg);
+  overflow-y: auto;
+  padding: 24px 28px;
+}
+@media (max-width: 900px) {
+  .userdash-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .userdash-map {
+    height: 360px;
+  }
+  .userdash-list {
+    height: auto;
+  }
+}
+
+.shop-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 14px 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.cards-grid {
+  display: grid;
+  gap: 14px;
+}

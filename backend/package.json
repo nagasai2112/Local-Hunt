@@ -1,0 +1,33 @@
+{
+  "name": "localhunt-backend",
+  "version": "1.0.0",
+  "description": "Backend server for Local Hunt (Nearby Shops) project using Node.js, Express, and MongoDB.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "express",
+    "mongo",
+    "localhunt",
+    "backend",
+    "shops",
+    "api"
+  ],
+  "author": "Nagasai Budida",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "mongoose": "^7.8.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
